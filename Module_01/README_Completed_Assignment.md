@@ -6,53 +6,14 @@
 
 ---
 
-</div>
+</div id="pre-flight" align="center" style="color: #23d4c5;">
 
-<div id="part-1" align="center" style="background-color: #3c4b4a;">
-<table>
-  <thead>
-    <tr>
-      <th align="left">Part<br><img width="50" height="1"></th>
-      <th align="left">Step<br><img width="50" height="1"></th>
-      <th align="left">Description<br><img width="150" height="1"></th>
-      <th align="left">gcloud cli command (bash) or console<br><img width="400" height="1"></th>
-      <th align="left">Results (ScreenPrint)<br><img width="300" height="1"></th>
-      <th align="left">Notes<br><img width="150" height="1"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="white-space: nowrap;">Pre-Flight</td>
-      <td>1</td>
-      <td>Create BigQuery Dataset</td>
-      <td><pre><code>bq mk --dataset --location=US \
---description="Week 1 - rdua1" \
-&#36;GOOGLE_CLOUD_PROJECT:rdua1_ml</code></pre></td>
-      <td><img src="./Images/BigQuery_Dataset.png" alt="BigQuery Dataset"></td>
-      <td>verify the configured project and bq dataset</td>
-    </tr>
-    <tr>
-      <td style="white-space: nowrap;">Pre-Flight</td>
-      <td>2.1</td>
-      <td>Enable Cloud Build API</td>
-      <td><pre><code>gcloud services enable cloudbuild.googleapis.com</code></pre></td>
-      <td>N/A</td>
-      <td>Service needs to be enabled before adding permissions on SA</td>
-    </tr>
-    <tr>
-      <td style="white-space: nowrap;">Pre-Flight</td>
-      <td>2.2</td>
-      <td>Grant Cloud Build Deployment Permissions</td>
-      <td><pre><code>PROJECT_NUM=&#36;(gcloud projects describe &#36;GOOGLE_CLOUD_PROJECT \
---format="value(projectNumber)")</code></pre>
-      <pre><code>CB_SA="&#36;{PROJECT_NUM}@cloudbuild.gserviceaccount.com"</code></pre>
-      <pre><code>for ROLE in roles/run.admin roles/iam.serviceAccountUser; do
-gcloud projects add-iam-policy-binding &#36;GOOGLE_CLOUD_PROJECT \
---member="serviceAccount:&#36;{CB_SA}" --role="&#36;ROLE"
-done</code></pre></td>
-      <td><img src="./Images/CloudBuild_SA_Roles.png" alt="BigQuery Dataset"></td>
-      <td>Console View</td>
-    </tr>
-  </tbody>
-</table>
+| Part | Step | Description | gcloud cli command (bash) or console | Results (ScreenPrint) | Notes |
+| :--: | :--: | :---------: | :----------------------------------- | :-------------------: | :---: |
+| Pre&#8209;Flight | 1 | Create BigQuery Dataset | `bq mk --dataset --location=US \`<br>`--description="Week 1 - rdua1" \`<br>`$GOOGLE_CLOUD_PROJECT:rdua1_ml` | ![BQ Datasets](./Images/BigQuery_Dataset.png) | verify the configured project and bq dataset                |
+| Pre&#8209;Flight | 2.1 | Enable Cloud Build API | `gcloud services enable cloudbuild.googleapis.com`| N/A | Service needs to be enabled before adding permissions on SA |
+| Pre&#8209;Flight | 2.2  | Grant Cloud Build Deployment Permissions | `PROJECT_NUM=$(gcloud projects describe $GOOGLE_CLOUD_PROJECT \`<br>`--format="value(projectNumber)")`<br><br>`CB_SA="${PROJECT_NUM}@cloudbuild.gserviceaccount.com"`<br><br>`for ROLE in roles/run.admin roles/iam.serviceAccountUser; do`<br>`gcloud projects add-iam-policy-binding $GOOGLE_CLOUD_PROJECT \`<br>`--member="serviceAccount:${CB_SA}" --role="$ROLE"`<br>`done` | ![BQ Datasets](./Images/CloudBuild_SA_Roles.png)  | Console View                                                |
+
+---
+
 </div>
