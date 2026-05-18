@@ -25,8 +25,8 @@
 | Part | Step | Description | gcloud cli command (bash) or console | Results (ScreenPrint) | Notes |
 | :--: | :--: | :---------: | :----------------------------------: | :-------------------: | :---: |
 | Part&#8209;1 | 1 | Create Model and Train | `Console > BigQuery > Studio > Classic Explorer > Query Editor` | ![Model Training](./Images/Create_And_Train_Model_v1_vs_v2.png) | Added weight tuning to improve recall to catch more defaulters |
-| Part&#8209;1 | 2 | Model Evaluation | `Console > BigQuery > Studio > Classic Explorer > Query Editor` | ![Model Explain](./Images/Evaluate_Model_v1_vs_v2_training_data.png)![Model Explain](./Images/Evaluate_Model_v1_vs_v2_full_and_training_data.png) | Service needs to be enabled before adding permissions on SA |
-| Part&#8209;1 | 3  | Model Global Explain | `Console > BigQuery > Studio > Classic Explorer > Query Editor` | ![Model Explain](./Images/Global_Explain_Model_v1_vs_v2.png)  | Difference b/w V1 & V2 Explain |
+| Part&#8209;1 | 2 | Model Evaluation | `Console > BigQuery > Studio > Classic Explorer > Query Editor` | ![Model Explain](./Images/Evaluate_Model_v1_vs_v2_training_data.png)![Model Explain](./Images/Evaluate_Model_v1_vs_v2_full_and_training_data.png) | Difference b/w V1 & V2 Model Evaluate |
+| Part&#8209;1 | 3  | Model Global Explain | `Console > BigQuery > Studio > Classic Explorer > Query Editor` | ![Model Explain](./Images/Global_Explain_Model_v1_vs_v2.png)  | Difference b/w V1 & V2 Model Explain |
 
 ---
 
