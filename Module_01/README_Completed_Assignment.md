@@ -10,22 +10,14 @@
 
 <div id="part-1" align="center" style="background-color: #3c4b4a;">
 <table>
-  <colgroup>
-    <col style="width: 5%" />
-    <col style="width: 5%" />
-    <col style="width: 5%" />
-    <col style="width: 35%" />
-    <col style="width: 35%" />
-    <col style="width: 15%" />
-  </colgroup>
   <thead>
     <tr>
-      <th style="text-align: left;">Part</th>
-      <th style="text-align: left;">Step</th>
-      <th style="text-align: left;">Description</th>
-      <th style="text-align: left;">gcloud cli command (bash) or console</th>
-      <th style="text-align: left;">Results (ScreenPrint)</th>
-      <th style="text-align: left;">Notes</th>
+      <th width="5%" align="left">Part</th>
+      <th width="5%" align="left">Step</th>
+      <th width="10%" align="left">Description</th>
+      <th width="35%" align="left">gcloud cli command (bash) or console</th>
+      <th width="35%" align="left">Results (ScreenPrint)</th>
+      <th width="10%" align="left">Notes</th>
     </tr>
   </thead>
   <tbody>
