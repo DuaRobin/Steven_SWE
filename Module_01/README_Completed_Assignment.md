@@ -12,12 +12,12 @@
 <table>
   <thead>
     <tr>
-      <th width="5%" align="left">Part</th>
-      <th width="5%" align="left">Step</th>
-      <th width="10%" align="left">Description</th>
-      <th width="35%" align="left">gcloud cli command (bash) or console</th>
-      <th width="35%" align="left">Results (ScreenPrint)</th>
-      <th width="10%" align="left">Notes</th>
+      <th align="left">Part<br><img width="50" height="1"></th>
+      <th align="left">Step<br><img width="50" height="1"></th>
+      <th align="left">Description<br><img width="150" height="1"></th>
+      <th align="left">gcloud cli command (bash) or console<br><img width="400" height="1"></th>
+      <th align="left">Results (ScreenPrint)<br><img width="300" height="1"></th>
+      <th align="left">Notes<br><img width="150" height="1"></th>
     </tr>
   </thead>
   <tbody>
@@ -48,7 +48,7 @@
       <pre><code>CB_SA="&#36;{PROJECT_NUM}@cloudbuild.gserviceaccount.com"</code></pre>
       <pre><code>for ROLE in roles/run.admin roles/iam.serviceAccountUser; do
 gcloud projects add-iam-policy-binding &#36;GOOGLE_CLOUD_PROJECT \
---member="serviceAccount:${CB_SA}" --role="$ROLE"
+--member="serviceAccount:&#36;{CB_SA}" --role="&#36;ROLE"
 done</code></pre></td>
       <td><img src="./Images/CloudBuild_SA_Roles.png" alt="BigQuery Dataset"></td>
       <td>Console View</td>
