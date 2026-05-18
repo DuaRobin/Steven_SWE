@@ -10,6 +10,14 @@
 
 <div id="part-1" align="center" style="background-color: #3c4b4a;">
 <table>
+  <colgroup>
+    <col style="width: 5%" />
+    <col style="width: 5%" />
+    <col style="width: 5%" />
+    <col style="width: 35%" />
+    <col style="width: 35%" />
+    <col style="width: 15%" />
+  </colgroup>
   <thead>
     <tr>
       <th style="text-align: left;">Part</th>
