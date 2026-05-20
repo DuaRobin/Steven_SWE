@@ -1,0 +1,25 @@
+steps:
+  # Step 1: Install dependencies and run pytest
+  - name: 'python:3.14.4'
+    entrypoint: '/bin/bash'
+    args:
+      - '-c'
+      - |
+        pip install -r requirements.txt
+        pytest tests/test_app.py
+
+  # Step 2: Deploy to Cloud Run using source-based deployment
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gcloud run deploy rdua1-inference-api \
+        --source . \
+        --region us-east1 \
+        --min-instances 0 \
+        --max-instances 1 \
+        --memory 512Mi \
+        --timeout 30 \
+        --no-allow-unauthenticated \
+        --set-env-vars ENVIRONMENT=production
