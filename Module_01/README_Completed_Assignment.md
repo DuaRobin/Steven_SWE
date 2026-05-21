@@ -74,3 +74,15 @@
 ---
 
 </div>
+<br/>
+<br/>
+<br/>
+<div id="part-5" align="center" style="color: #000000; background-color: #479d54;">
+
+| Part | Step | Description | gcloud cli command (bash) or console | Results (ScreenPrint) | Notes |
+| :--- | :--- | :---------- | :----------------------------------- | :-------------------- | :---- |
+| Part-5 | 1  | Architecture Diagram (draw.io) | | [Please Refer Here](./ArchitectureDiagrams/)<br><br>![Architecture Diagram](./ArchitectureDiagrams/architecture.png) |  |
+
+---
+
+</div>
