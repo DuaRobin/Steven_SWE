@@ -61,3 +61,16 @@
 ---
 
 </div>
+<br/>
+<br/>
+<br/>
+<div id="part-4" align="center" style="color: #000000; background-color: #479d54;">
+
+| Part | Step | Description | gcloud cli command (bash) or console | Results (ScreenPrint) | Notes |
+| :--- | :--- | :---------- | :----------------------------------- | :-------------------- | :---- |
+| Part-4 | 1 | Create Workbench Instance | `gcloud workbench instances create rdua1-eda \`<br>`--location=us-east1-b \`<br>`--machine-type=e2-standard-4 \`<br>`--metadata=idle-timeout-minutes=30` | ![Compute SA Permissions](./Images/Part4/Workbench_Instance_Ready.png) | Console View |
+| Part-4 | 2  | Jupyter EDA (GitHub) | Jupyter Notebook with Outputs | [Please Refer Here](./JupyterEDA/credit_default_eda.ipynb) |  |
+
+---
+
+</div>
