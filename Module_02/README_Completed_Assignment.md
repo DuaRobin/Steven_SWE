@@ -44,3 +44,16 @@
 ---
 
 </div>
+<br/>
+<br/>
+<br/>
+<div id="task-03" align="center" style="color: #000000; background-color: #479d54;">
+
+| Part | Step | Description | gcloud cli command (bash) or console | Results (ScreenPrint) | Notes |
+| :--- | :--- | :---------- | :----------------------------------- | :-------------------- | :---- |
+| Task-03 | 1 | API Code (GitHub) | `Chat API With Grounding` | [Please Refer Here](./FastAPI_Task03/) | API Code For Task03 |
+| Task-03 | 2 | Cloud Run Deployment<br><br>(using source, via CLI) | `gcloud run deploy rdua1-medicare-policy-chat-api \`<br>`--source . \`<br>`--region us-east1 \`<br>`--min-instances 0 \`<br>`--max-instances 1 \`<br>`--memory 512Mi \`<br>`--timeout 30 \`<br>`--no-allow-unauthenticated \`<br>`--set-env-vars ENVIRONMENT=production` | ![Cloud Run Deployed](./Images/Task03/Deployed_Cloud_Run_Ver_3.0.0.png)![API Health Check](./Images/Task03/API_Health_Check_Ver_3.0.0.png) | Deployed Cloud Run Service With Env Vars - Console View |
+| Task-03 | 3 | Chat API Testing With Authorization<br><br>(using Postman) | `1: Golden Question-15, Chapter 9`<br><br>`2: Golden Question-3, Chapter 9`<br><br>`3: Golden Question-7, Chapter 7` | ![Sample-Test-1.1](./Images/Task03/Smoke_Test_1_Part_1.png) ![Sample-Test-1.2](./Images/Task03/Smoke_Test_1_Part_2.png) ![Sample-Test-2](./Images/Task03/Smoke_Test_2.png) ![Sample-Test-3](./Images/Task03/Smoke_Test_3.png)| Postman Testing Using Golden Set Questions|
+---
+
+</div>
