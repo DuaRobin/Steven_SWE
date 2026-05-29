@@ -57,3 +57,49 @@
 ---
 
 </div>
+<br/>
+<br/>
+<br/>
+<div id="task-04" align="center" style="color: #000000; background-color: #479d54;">
+
+| Part | Step | Description | gcloud cli command (bash) or console | Results (ScreenPrint) | Notes |
+| :--- | :--- | :---------- | :----------------------------------- | :-------------------- | :---- |
+| Task-04 | 1 | API Code (GitHub) | `Chat API With Grounding`<br>`(Same From Task03)` | [Please Refer Here](./FastAPI_Task04/) | API Code For Task04 |
+| Task-04 | 2 | Evaluation Script (GitHub) | | [Please Refer Here](./FastAPI_Task04/eval.py) | Python Script to Invoke Chat API For Every Question in Golden Set For Evaluation |
+| Task-04 | 3 | Evaluation Reports | | [Please Refer Here For Pass-1](./FastAPI_Task04/eval_results_pass_1.json) [Please Refer Here For Pass-2](./FastAPI_Task04/eval_results_pass_2.json) [Please Refer Here For Pass-3](./FastAPI_Task04/eval_results_pass_3.json) | Result of Executing eval.py |
+| Task-04 | 4 | Evaluation Reports | | [Please Refer Here For Pass-1](./FastAPI_Task04/eval_results_pass_1.json) [Please Refer Here For Pass-2](./FastAPI_Task04/eval_results_pass_2.json) [Please Refer Here For Pass-3](./FastAPI_Task04/eval_results_pass_3.json) | Result of Executing eval.py |
+---
+
+</div>
+
+# Evaluation Test Harness
+
+This document describes how to reproduce the evaluation of the Medicare Q&A streaming `/chat` endpoint using Gemini 2.5 Flash as a judge.
+
+## Evaluation Rubrics
+The evaluation utilizes a large language model (Gemini 2.5 Flash) to score system responses on a scale from **0 to 5** across two distinct metrics:
+
+1. **Factual accuracy (0-5)**: Measures how accurate the generated answer is compared to the established golden reference answer. A score of 5 indicates complete factual alignment, while a 0 indicates hallucinated or incorrect information conflicting with the reference.
+2. **Faithfulness (0-5)**: Measures whether the generated answer relies *only* on the provided citations. If the system incorporates outside knowledge or makes claims not supported by the JSON payload of its `source_uri` and `quote` citations, this score is heavily penalized.
+
+## How to Reproduce the Evaluation
+
+1. **Start the API Service**: First, ensure your FastAPI application is Deployed & Running on Cloud Run (GCP), so the evaluator can test it.
+API URL - https://rdua1-medicare-policy-chat-api-744841270406.us-east1.run.app
+2. **Prepare the Golden Dataset**: Create a file named golden.jsonl in the same directory as eval.py and paste the 15 JSONL records provided in the assignment.
+3. **Run the Evaluator**: Execute the evaluation script in a separate terminal. The script is hard-capped at 15 queries and will not enter infinite loops or retry on errors to protect GCP billing limits.
+4. **Review Results**: The script will compute the mean scores and generate an eval_results.json file in the root directory containing the detailed breakdown of every graded question.
+<br/>
+<br/>
+<br/>
+<div id="task-05" align="center" style="color: #000000; background-color: #479d54;">
+
+| Part | Step | Description | gcloud cli command (bash) or console | Results (ScreenPrint) | Notes |
+| :--- | :--- | :---------- | :----------------------------------- | :-------------------- | :---- |
+| Task-05 | 1 | API Code (GitHub) | `Chat API With Grounding`<br>`(Same From Task03)` | [Please Refer Here](./FastAPI_Task04/) | API Code For Task04 |
+| Task-05 | 2 | Evaluation Script (GitHub) | | [Please Refer Here](./FastAPI_Task04/eval.py) | Python Script to Invoke Chat API For Every Question in Golden Set For Evaluation |
+| Task-05 | 3 | Evaluation Reports | | [Please Refer Here For Pass-1](./FastAPI_Task04/eval_results_pass_1.json) [Please Refer Here For Pass-2](./FastAPI_Task04/eval_results_pass_2.json) [Please Refer Here For Pass-3](./FastAPI_Task04/eval_results_pass_3.json) | Result of Executing eval.py |
+| Task-05 | 4 | Evaluation Reports | | [Please Refer Here For Pass-1](./FastAPI_Task04/eval_results_pass_1.json) [Please Refer Here For Pass-2](./FastAPI_Task04/eval_results_pass_2.json) [Please Refer Here For Pass-3](./FastAPI_Task04/eval_results_pass_3.json) | Result of Executing eval.py |
+---
+
+</div>
