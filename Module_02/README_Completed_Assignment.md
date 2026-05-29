@@ -98,7 +98,7 @@ API URL - https://rdua1-medicare-policy-chat-api-744841270406.us-east1.run.app
 | Task-05 | 1 | API Code (GitHub) | `Chat API With Grounding` | [Please Refer Here](./FastAPI_Task05/) | API Code For Task05 |
 | Task-05 | 2 | REACT UI SPA Code (GitHub) | | [Please Refer Here](./React_UI_Task05/) | React UI Supporting 'Streaming Server Events' and with Abort Controller |
 | Task-05 | 3 | Chat History | | ![Please Refer Here For Chat History Screenshot](./Images/Task05/Agent_Chat_History.png) | Screenshot of the Chat |
-| Task-05 | 4 | Live Chat Recording | | <video src="./Images/Task05/Agent_Chat_Recording.webm" controls width="100%"></video> | Live Chat Recording<br><br>Note Streaming & Abort Action |
+| Task-05 | 4 | Live Chat Recording | | [▶️ Watch the Live Chat Recording](./Images/Task05/Agent_Chat_Recording.webm) | Live Chat Recording<br><br>Note Streaming & Abort Action |
 ---
 
 </div>
