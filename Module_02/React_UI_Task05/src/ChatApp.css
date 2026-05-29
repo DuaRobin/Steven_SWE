@@ -1,0 +1,133 @@
+.chat-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0; /* Grow to fill the #root container */
+  min-height: 0; /* Prevent the container from expanding past the viewport */
+  text-align: left; /* Override the centered text inherited from #root */
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 15px;
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensures padding is calculated within the element's total width */
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #e3f2fd;
+  max-width: 80%;
+}
+
+.message.assistant {
+  align-self: flex-start;
+  background-color: #f5f5f5;
+  max-width: 100%;
+  border: 1px solid #ddd;
+}
+
+.citations-container {
+  font-size: 0.80em;
+  color: #444;
+  margin-top: 15px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.citation-item {
+  margin-bottom: 5px;
+}
+.message-footer {
+  font-size: 0.80em;
+  color: #666;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.message-footer.aborted {
+  color: #a9323e;
+}
+.input-container {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0; /* Add some padding for visual clearance */
+  flex-shrink: 0; /* Ensure the input container never shrinks */
+  align-items: center;
+}
+
+.chat-input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.chat-button {
+  background: transparent;
+  border: none;
+  padding: 0 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #007bff;
+  border: none;
+  border-radius: 4px;
+}
+
+.chat-button:hover {
+  color: #0056b3;
+}
+
+.stop-streaming-button {
+  background: transparent;
+  border: none;
+  padding: 0 5px; /* Slight padding for a better click target */
+  cursor: pointer;
+  font-size: 1.5rem; /* Make the icon larger */
+  color: #a9323e; /* Standard red for stop/cancel actions */
+  display: flex;
+  align-items: center;
+}
+
+.stop-streaming-button:hover {
+  color: #c82333; /* Darker red on hover for visual feedback */
+}
+
+.typing-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+.typing-indicator span {
+  width: 6px;
+  height: 6px;
+  background-color: #888;
+  border-radius: 50%;
+  animation: typingBounce 1.4s infinite ease-in-out both;
+}
+
+.typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
+.typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0s; }
+
+@keyframes typingBounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1); }
+}
