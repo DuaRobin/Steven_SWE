@@ -1,9 +1,9 @@
-2026-06-04 03:42:08,399 - store - INFO - 🪂 Starting Embedding Store Process...
-2026-06-04 03:42:08,400 - store - INFO - Database Credentials Retrived Successfully.
-2026-06-04 03:42:09,151 - store - INFO - ✅ Database Pool Initialized Successfully.
-2026-06-04 03:42:09,206 - store - INFO - 🛠️ Extension (vector) creation status: CREATE EXTENSION
-2026-06-04 03:42:09,388 - store - INFO - 📄 Table creation status: CREATE TABLE
-2026-06-04 03:42:24,188 - store - INFO - ✅ Successfully inserted 14492 document chunks.
-2026-06-04 03:42:32,815 - store - INFO - 📄 Index creation status: CREATE INDEX
-2026-06-04 03:42:32,961 - store - INFO - 🏊🏻 DB Pool Closed.
-2026-06-04 03:42:33,246 - store - INFO - 🪂 Embedding Process Completed Successfully...
+2026-06-04 23:34:11,189 - store - INFO - 🪂 Starting Embedding Store Process...
+2026-06-04 23:34:11,189 - store - INFO - Database Credentials Retrived Successfully.
+2026-06-04 23:34:11,834 - store - INFO - ✅ Database Pool Initialized Successfully.
+2026-06-04 23:34:11,941 - store - INFO - 🛠️ Extension (vector) creation status: CREATE EXTENSION
+2026-06-04 23:34:12,145 - store - INFO - 📄 Table creation status: CREATE TABLE
+2026-06-04 23:34:24,716 - store - INFO - ✅ Successfully inserted 14492 document chunks.
+2026-06-04 23:34:30,283 - store - INFO - 📄 Index creation status: CREATE INDEX
+2026-06-04 23:34:30,381 - store - INFO - 🏊🏻 DB Pool Closed.
+2026-06-04 23:34:30,695 - store - INFO - 🪂 Embedding Process Completed Successfully...

@@ -1,0 +1,182 @@
+{
+  "mean_factual_accuracy": 3.68,
+  "mean_faithfulness": 4.12,
+  "total_evaluated": 25,
+  "results": [
+    {
+      "question": "What is the minimum number of consecutive calendar days a patient must be hospitalized before qualifying for SNF coverage?",
+      "generated_answer": "A patient must be an inpatient of a hospital for a medically necessary stay of at least three consecutive calendar days to qualify for Skilled Nursing Facility (SNF) coverage [source: corpus/benefits_policy_manual/bp102c08.pdf, page 8, 11]. This 3-day qualifying inpatient hospital stay can be met by stays totaling 3 consecutive days in one or more hospitals [source: corpus/benefits_policy_manual/bp102c08.pdf, page 8]. The day of admission is counted as a hospital inpatient day, but not the day of discharge [source: corpus/benefits_policy_manual/bp102c08.pdf, page 8]. Time spent in observation or the emergency room prior to an inpatient admission does not count toward this 3-day stay [source: corpus/benefits_policy_manual/bp102c08.pdf, page 4].",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The system answer accurately states the minimum number of consecutive calendar days (3), clarifies that the day of admission counts but discharge does not, and confirms that observation/ER time does not count. It also adds a relevant detail about stays in one or more hospitals, which is not contradictory to the reference answer. All statements in the system answer are directly supported by the provided citations."
+    },
+    {
+      "question": "How long after hospital discharge must a patient be transferred to a SNF to qualify for Medicare coverage?",
+      "generated_answer": "A patient must be transferred to a participating Skilled Nursing Facility (SNF) within 30 days after discharge from the hospital to qualify for Medicare coverage, unless an exception applies [source: corpus/benefits_policy_manual/bp102c08.pdf, page 4, 8]. The day of discharge from the hospital is not counted in the 30 days; the period begins on the day following the actual discharge [source: corpus/benefits_policy_manual/bp102c08.pdf, page 11].\n\nAdditionally, for coverage, the beneficiary must require a covered level of care and initiate it in the SNF within this specified timeframe [source: corpus/benefits_policy_manual/bp102c08.pdf, page 11].",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The system answer accurately states the 30-day transfer requirement and correctly identifies that exceptions apply. It also provides additional, accurate details regarding how the 30 days are counted (excluding the discharge day) and other coverage requirements (requiring a covered level of care), which are not present in the reference answer but are correct and relevant. All information provided by the system is directly supported by the cited pages within the `bp102c08.pdf` document. The system did not hallucinate any details."
+    },
+    {
+      "question": "What is the definition of a terminally ill individual for Medicare hospice eligibility?",
+      "generated_answer": "An individual is considered terminally ill for Medicare hospice eligibility if their medical prognosis indicates that their life expectancy is six months or less, assuming the illness runs its normal course [source: corpus/benefits_policy_manual/bp102c09.pdf, page 4, corpus/benefits_policy_manual/bp102c09.pdf, page 44].",
+      "factual_accuracy": 3,
+      "faithfulness": 5,
+      "reasoning": "The system answer accurately states the core definition of a terminally ill individual for Medicare hospice eligibility, specifically the 'six months or less' life expectancy if the illness runs its normal course. However, it omits a crucial detail present in the reference answer: that this prognosis is 'based on the clinical judgment of the hospice medical director or physician member of the IDG and the attending physician.' This omission makes the answer less comprehensive than the reference. For faithfulness, the information provided by the system ('life expectancy is six months or less, assuming the illness runs its normal course') is directly supported by the cited pages (typically found on page 4 of the Medicare Benefit Policy Manual, Chapter 9). The system does not hallucinate any details; it simply does not include all information from the reference answer."
+    },
+    {
+      "question": "What are the Medicare hospice election periods?",
+      "generated_answer": "Medicare hospice election periods consist of:\n*   An initial 90-day period [source: corpus/benefits_policy_manual/bp102c09.pdf, page 4; corpus/claim_processing_manual/clm104c11.pdf, page 24].\n*   A subsequent 90-day period [source: corpus/claim_processing_manual/clm104c11.pdf, page 24].\n*   An unlimited number of subsequent 60-day periods [source: corpus/benefits_policy_manual/bp102c09.pdf, page 4; corpus/claim_processing_manual/clm104c11.pdf, page 24].\n\nMedicare systems refer to these 90-day or 60-day periods as 'benefit periods' [source: corpus/claim_processing_manual/clm104c11.pdf, page 24",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The system answer perfectly matches the factual content of the reference answer, stating the correct sequence and duration of hospice election periods. Each piece of information in the system's answer is accompanied by specific citations to the provided documents and page numbers, indicating strong faithfulness to the source material."
+    },
+    {
+      "question": "Who can certify or recertify terminal illness for hospice benefits?",
+      "generated_answer": "Only a medical doctor (MD) or doctor of osteopathy (DO) can certify or re-certify a terminal illness for hospice benefits [source: corpus/benefits_policy_manual/bp102c09.pdf, page 4, page 5].\n\nSpecifically",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The System Answer accurately states that only a medical doctor (MD) or doctor of osteopathy (DO) can certify or re-certify a terminal illness for hospice benefits, which is fully consistent with the Reference Answer. The use of 'Only' in the System Answer implicitly covers the exclusion of other professionals mentioned in the Reference Answer. The System Answer also provides specific citations, and assuming these citations support the statement, there is no evidence of hallucination."
+    },
+    {
+      "question": "What conditions must a patient meet to qualify for Medicare home health services?",
+      "generated_answer": "To qualify for the Medicare home health benefit, a Medicare beneficiary must meet the following requirements:\n*   Be confined to the home [source: corpus/benefits_policy_manual/bp102c07.pdf, page 23].\n*   Be under the care of a physician or allowed practitioner [source: corpus/benefits_policy_manual/bp102c07.pdf, page 23].\n*   Be receiving services under a plan of care established and periodically reviewed by a physician or allowed practitioner [source: corpus/benefits_policy_manual/bp102c07.pdf, page 23].\n*   Be in need of skilled nursing care on an intermittent basis or physical therapy or speech-language pathology; or have a continuing need for occupational therapy [source: corpus/benefits_policy_manual/bp102c07.pdf, page 23].\n\nFor benefit eligibility, \"intermittent\" skilled nursing care means it is provided or needed on fewer than 7 days each week or less than 8 hours of each day for periods of 21 days or less, with possible extensions in exceptional, finite, and predictable circumstances [source: corpus/benefits_policy_manual/bp102c07.pdf, page 23].\n\nA patient must meet each of these criteria [source: corpus/benefits_policy_manual/bp102",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The system answer accurately lists all the conditions mentioned in the reference answer. It also provides a helpful and accurate definition of 'intermittent' skilled nursing care, which enhances the answer without contradicting the reference. Each point in the system answer is directly supported by a citation to the provided source document."
+    },
+    {
+      "question": "What six disciplines are included in the Home Health PPS 30-day period payment rate?",
+      "generated_answer": "The six home health disciplines included in the 30-day period payment rate for the Home Health Prospective Payment System (HH PPS) are [source: corpus/benefits_policy_manual/bp102c07.pdf, page 6]:\n\n1.  Skilled nursing services\n2.  Home health aide services\n3.  Physical therapy\n4.  Speech-language pathology services\n5.  Occupational therapy services\n6.  Medical social services",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The system answer accurately lists the six disciplines included in the Home Health PPS 30-day period payment rate, which perfectly matches the reference answer. The system explicitly cites a specific page in a document for its answer, indicating that the information is directly supported by the provided citation. Without access to the document, I must assume the citation supports the claim, and the system does not introduce any unfaithful information."
+    },
+    {
+      "question": "What requirements must a psychiatric hospital meet to be excluded from IPPS and paid under IPF PPS?",
+      "generated_answer": "To be excluded from the Inpatient Prospective Payment System (IPPS) and paid under the Inpatient Psychiatric Facility Prospective Payment System (IPF PPS), a psychiatric hospital must meet the following requirements:\n1.  Be primarily engaged in providing, by or under the supervision of a psychiatrist, psychiatric services for the diagnosis and treatment of mentally ill persons [source: corpus/benefits_policy_manual/bp102c02.pdf, page 3].\n2.  Meet the conditions of participation for hospitals and special conditions of participation for psychiatric hospitals set forth in 42 CFR part 482 [source: corpus/benefits_policy_manual/bp102c02.pdf, page 3].\n\nThese criteria are also referenced in 42 CFR 412.23(a), 482.60, 482.61, and 482.62 [source: corpus/benefits_policy_manual/bp102c02.pdf, page 6].",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The system answer accurately captures all requirements mentioned in the reference answer. It provides slightly more specific detail (e.g., 'psychiatrist' instead of 'physician') which is still correct in context, and adds specific CFR references which are relevant and accurate. All information provided in the system answer is directly supported by the cited sources."
+    },
+    {
+      "question": "What services are excluded from the definition of inpatient hospital services under Part A?",
+      "generated_answer": "Inpatient hospital services under Part A do not include the following types of services:\n\n1.  Posthospital Skilled Nursing Facility (SNF)",
+      "factual_accuracy": 2,
+      "faithfulness": 5,
+      "reasoning": "The system's answer is factually accurate for the single item it provides, but it is extremely incomplete compared to the comprehensive list in the reference answer. It only lists \"Posthospital Skilled Nursing Facility (SNF)\" while the reference lists several other types of services excluded from inpatient hospital services under Part A. Therefore, its factual accuracy is low due to significant omissions. The system's answer is faithful to the citations for the information it does provide, as it only states one type of service, and it is assumed this service is mentioned as an exclusion in the provided documents. It does not hallucinate any details."
+    },
+    {
+      "question": "When can Part B payment be made for hospital inpatient services after a Part A denial?",
+      "generated_answer": "Part B payment can be made for hospital inpatient services after a Part A denial in the following circumstances:\n\n*   When inpatient services are denied as",
+      "factual_accuracy": 0,
+      "faithfulness": 0,
+      "reasoning": "The system answer is incomplete. It starts to list the circumstances but cuts off abruptly, providing no actual information regarding when Part B payment can be made. Therefore, it fails to answer the question and cannot be considered factually accurate or faithful to any specific content, as there is no content provided."
+    },
+    {
+      "question": "Does Medicare cover immunizations and vaccinations?",
+      "generated_answer": "Yes, Medicare Part B covers certain immunizations and vaccinations, including:**\n\n*   Pneumococcal pneumonia vaccine [source: corpus/benefits",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The Reference Answer states that immunizations are \"Generally excluded unless... specifically covered by statute.\" This implies that some immunizations are indeed covered. The System Answer correctly states, \"Yes, Medicare Part B covers certain immunizations and vaccinations,\" and provides a correct example, the Pneumococcal pneumonia vaccine, which is known to be covered by Part B. Therefore, the System Answer is factually accurate and consistent with the nuances of the Reference Answer.\n\nFor faithfulness, the System Answer directly addresses the question and provides a specific, correct example of a covered vaccine. The provided citations are from relevant Medicare manuals (Benefits Policy Manual, Chapter 15, and Claim Processing Manual), which are highly likely to contain information about covered immunizations, including the pneumococcal vaccine. Assuming the citations support the specific claim, the answer is faithful as it does not appear to introduce information not supported by the cited sources. The answer is concise and sticks to the point of coverage."
+    },
+    {
+      "question": "What items are included in Medicare extended care (SNF) services?",
+      "generated_answer": "Medicare extended care services include:\n*   Nursing care provided by or under the supervision of a registered professional nurse [source: corpus/benefits_policy_manual/bp102c08.pdf, page 3].\n*   Bed and board in semi-private accommodations furnished in connection with nursing care [source: corpus/benefits_policy_manual/bp102c08.pdf, page 3].\n*   Physical, therapy, speech-language pathology, and occupational therapy furnished by the skilled nursing facility or by others under arrangements with the facility and under its supervision [source: corpus/benefits_policy_manual/bp102c08.pdf, page 3].\n*   Medical social services to meet the patient\u2019s medically related social needs [source: corpus/benefits_policy_manual/bp102c08.pdf, page 3].\n*   Drugs and biologicals [source: corpus/benefits_policy_manual/bp102c08.pdf, page 3].\n*   Supplies, appliances, and equipment [source: corpus/benefits_policy_manual/bp102c08.pdf, page 3].\n*   Medical service of an intern or resident-in-training [source: corpus/benefits_policy_manual/bp102c08.pdf, page 3].\n*   Other services, including respiratory therapy [source: corpus/benefits_policy_manual/bp102c08.pdf, page 3].\n\nThese services are generally provided by, or under arrangements made by, skilled nursing facilities [source: corpus/benefits_policy_manual/bp102c08.pdf, page 50]. Items or services that would not be included as inpatient hospital services if furnished to an inpatient of a hospital are also excluded from coverage as extended care services [source: corpus/benefits_policy_manual/bp102c08.pdf, page 50].",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The system answer accurately lists all items included in the reference answer and provides additional, more detailed information for each item, making it more comprehensive. For example, 'bed and board' is elaborated to 'Bed and board in semi-private accommodations furnished in connection with nursing care'. All listed items and additional contextual statements are directly attributed to specific pages within the provided citations. Assuming the citations accurately reflect the content of those pages, the answer is entirely supported and faithful to the source material without any apparent hallucinations."
+    },
+    {
+      "question": "What does a patient waive when electing hospice care?",
+      "generated_answer": "When electing hospice care, an individual must waive all rights to Medicare payments for:\n*   Hospice care provided by a hospice other than the hospice designated by the individual (unless provided under arrangements made by the designated hospice) [source: corpus/benefits_policy_manual/bp102c09.pdf, page 4].\n*   Medicare Part B payments for services related to the treatment and management of their terminal illness, with the exception of professional services from an attending physician (which may include a nurse practitioner or physician assistant) [source: corpus/claim_processing_manual/clm104c11.pdf, page 3].",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The system answer accurately captures all the points mentioned in the reference answer. It specifies that the patient waives rights to Medicare payments for hospice care from a non-designated hospice (unless under arrangement) and for Medicare Part B services related to the terminal illness, with the exception of professional services from an attending physician. The system also adds a clarification that an attending physician may include a nurse practitioner or physician assistant, which is a common and accurate detail in Medicare policy. The citations provided directly support each point made in the system answer, indicating high faithfulness."
+    },
+    {
+      "question": "What happens to Medicare coverage for conditions unrelated to terminal illness during hospice?",
+      "generated_answer": "Medicare services for conditions completely unrelated to the terminal illness for which hospice care was elected remain available to the patient, provided the patient is eligible for such care [source: corpus/benefits_policy_manual/bp102c09.pdf, page 5].\n\nDuring a hospice election, fee-for-service Medicare covers all care unrelated to the terminal illness [source: corpus/benefits_policy_manual/bp102c09.pdf, page 22]. If a managed care enrollee elects hospice, their Medicare benefits revert to fee-for-service, and fee-for-service Medicare covers care unrelated to the terminal illness [source: corpus/benefits_policy",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The system answer is factually accurate and provides a more comprehensive explanation than the reference answer, detailing how fee-for-service Medicare covers unrelated conditions and what happens with managed care enrollees. It does not contradict the reference answer but elaborates on it. All claims made in the system answer are supported by the provided citations. Although the last citation is truncated, the information provided is standard Medicare policy and the source type (benefits policy manual) is correctly identified, indicating that the content is not hallucinated."
+    },
+    {
+      "question": "What is a day patient under Medicare hospital services?",
+      "generated_answer": "Under Medicare hospital services, a \"day patient\" is defined as an individual who receives hospital services during the day and is not expected to be lodged in the hospital at midnight. This individual is considered an outpatient [source: corpus/benefits_policy_manual/bp102c06.pdf, page 9].",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The system answer is factually accurate as it perfectly matches the reference answer. The system also provides a specific citation (corpus/benefits_policy_manual/bp102c06.pdf, page 9) that directly supports the entire answer, indicating high faithfulness."
+    },
+    {
+      "question": "What is the timely filing limit for Medicare Part B claims after a Part A inpatient denial?",
+      "generated_answer": "Claims for Part B services submitted following a reasonable and necessary Part A claim denial or hospital utilization review determination must be filed no later than the close of the period ending 12 months or 1 calendar year after the date of service [source: corpus/benefits_policy_manual/bp102c06.pdf, page 4].",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The System Answer provides the correct timely filing limit (12 months or 1 calendar year after the date of service), which matches the Reference Answer. Furthermore, it adds specific and relevant context by stating that this applies to 'Part B services submitted following a reasonable and necessary Part A claim denial or hospital utilization review determination,' directly addressing the nuances of the question regarding Part A inpatient denials. This makes the answer more precise and complete than the general Reference Answer. The answer explicitly cites 'corpus/benefits_policy_manual/bp102c06.pdf, page 4', which is present in the provided System Citations, indicating faithfulness to the source."
+    },
+    {
+      "question": "What types of therapy services can a SNF arrange with outside providers under Medicare?",
+      "generated_answer": "A Skilled Nursing Facility (SNF) can arrange with outside providers or suppliers for the following therapy services to be billed as ancillary services under Part B:\n*   Outpatient physical therapy [source: corpus/claim_processing_manual/clm104c07.pdf, page 5]\n*   Outpatient speech-language pathology services [source: corpus/claim_processing_manual/clm104c07.pdf, page 5]\n*   Outpatient occupational therapy [source: corpus/claim_processing_manual/clm104c07.pdf, page 5]\n\nFor these services, the SNF must either furnish them directly or obtain them from an outside entity under an \"arrangement\" [",
+      "factual_accuracy": 5,
+      "faithfulness": 4,
+      "reasoning": "The system answer correctly identifies the three types of therapy services (physical therapy, occupational therapy, and speech-language pathology services) that a SNF can arrange with outside providers. It also correctly states that the SNF must either furnish them directly or obtain them under an 'arrangement' and that they are billed under Part B, which aligns with the reference answer's implication that the SNF bills for these services. Therefore, the factual accuracy is high.\n\nFor faithfulness, the core information about the types of therapy and the arrangement mechanism is directly supported by the cited page (clm104c07.pdf, page 5). However, the system adds the qualifier 'Outpatient' to each therapy type (e.g., 'Outpatient physical therapy'). While these services are covered under Part B (which often relates to outpatient services), the cited document on page 5 refers to them simply as 'therapy services (physical therapy, occupational therapy, and speech-language pathology services)' without explicitly using the 'outpatient' qualifier in that context. This is a minor addition not strictly present in the cited text. The term 'ancillary services' is also not explicitly on page 5, though the concept of SNF billing for Part B services under arrangement is supported. The abrupt ending of the last sentence is a formatting issue, not a faithfulness concern regarding the content itself."
+    },
+    {
+      "question": "What is the difference between skilled and custodial care in the SNF context?",
+      "generated_answer": "Custodial care is defined as institutional care that is below the level of care covered in a Skilled Nursing Facility (SNF) [source: corpus/benefits",
+      "factual_accuracy": 3,
+      "faithfulness": 5,
+      "reasoning": "The system answer accurately states that custodial care is generally not covered at the SNF level, which aligns with the reference answer's point about exclusion. The definition provided by the system ('institutional care that is below the level of care covered in a Skilled Nursing Facility (SNF)') is a reasonable interpretation of the concept of custodial care in the SNF context. However, the system answer is incomplete as it only addresses custodial care and does not define skilled care or explicitly explain the 'difference' between the two, which is a key part of the question and the reference answer. Therefore, factual accuracy is a 3 due to incompleteness.\n\nThe system's statement that 'Custodial care is defined as institutional care that is below the level of care covered in a Skilled Nursing Facility (SNF)' is well-supported by the cited `corpus/benefits_policy_manual/bp102c16.pdf, Page 29`. This page, under Section 110.1 'Custodial Care Exclusion,' states that 'Custodial care is care that does not meet the criteria for skilled care.' Since SNF care is defined by meeting skilled care criteria, the system's statement is a faithful summary of the cited information. No hallucination is present."
+    },
+    {
+      "question": "What are the four core services that a hospice must provide directly?",
+      "generated_answer": "A hospice must provide the following core services directly, with the exception of physician services:\n*   Nursing services [source: corpus/benefits_policy_manual/bp102c09.pdf, page 38]\n*   Medical social services [source: corpus/benefits_policy_manual/bp102c09.pdf, page 38]\n*   Counseling (including, but not limited to, bereavement, dietary, and spiritual counseling) [source: corpus/benefits_policy_manual/bp102c09.pdf, page 39]\n\nPhysician services are also a core service, but they are explicitly excepted from",
+      "factual_accuracy": 1,
+      "faithfulness": 1,
+      "reasoning": "The system's answer directly contradicts the reference answer regarding physician services. The reference states that 'physicians' services' are one of the four core services that a hospice 'must provide directly'. The system, however, states that physician services are 'explicitly excepted from' direct provision. This is a significant factual inaccuracy when compared to the reference answer. Additionally, the system does not provide a specific citation to support its claim that physician services are excepted from direct provision, which impacts its faithfulness score as it makes a critical claim without direct citation."
+    },
+    {
+      "question": "What is continuous home care under hospice and when is it provided?",
+      "generated_answer": "Continuous home care (CHC) under hospice is provided when an individual who has elected to receive hospice care is at home and not in an inpatient facility (hospital,",
+      "factual_accuracy": 1,
+      "faithfulness": 1,
+      "reasoning": "The system answer is highly inaccurate and incomplete. It completely misses the core defining characteristics of continuous home care under hospice, which are: being provided during a period of crisis, consisting predominantly of nursing care, and requiring a minimum of 8 hours in a 24-hour period. Instead, it provides a generic statement that applies to general hospice care at home, not the specific 'continuous home care' level. This makes the answer misleading and unhelpful.\n\nFor faithfulness, assuming the provided citations contain the standard Medicare definition of continuous home care (which includes the crisis, nursing, and 8-hour requirements), the system's answer is unfaithful by significant omission and by providing a generic description that does not accurately represent the specific conditions for continuous home care as detailed in policy manuals. It misrepresents the specific service by giving a general condition for hospice care."
+    },
+    {
+      "question": "What is the definition of homebound for Medicare home health services?",
+      "generated_answer": "For Medicare home health services, a patient is considered \"confined to the home\" (homebound) if the following two criteria are met:\n\n1.  **Criteria-One:** The patient must either [source: corpus/benefits_policy_manual/bp102c15.pdf, page 69]:\n    *   Because of illness or injury, need the aid of supportive devices (such as crutches, canes, wheelchairs, and walkers), the use of special transportation, or the assistance of another person to leave their place of residence.\n    *   **OR** have a condition such that leaving their home is medically contraindicated.\n\n2.  **Criteria-Two:** If Criteria-One is met, the patient must also meet two additional requirements [source: corpus/benefits_policy_manual/bp102c15.pdf, page 69]:\n    *   There must exist a normal inability to leave home.\n    *   **AND** leaving home must require a considerable and taxing effort.\n\nEven if a patient does leave the",
+      "factual_accuracy": 5,
+      "faithfulness": 5,
+      "reasoning": "The System Answer provides a much more detailed and accurate definition of 'homebound' for Medicare home health services than the Reference Answer. It correctly outlines the two-criteria test, which is standard for Medicare. The Reference Answer is a simplified summary, while the System Answer offers a comprehensive explanation. The System Answer explicitly cites the source (corpus/benefits_policy_manual/bp102c15.pdf, page 69) for its detailed definition, and the content aligns with typical Medicare guidelines for homebound status. There is no evidence of hallucination, and the information provided is directly supported by the cited source."
+    },
+    {
+      "question": "How often must a home health plan of care be reviewed?",
+      "generated_answer": "A home health plan of care must be reviewed and signed by the physician or allowed practitioner who established the plan of care, in consultation with HHA professional personnel, at least every 60 days [source: corpus/benefits_policy_manual/bp102c07.pdf, page 32].\n\nUnder the Home Health Prospective Payment System (HH PPS), the plan of care must be reviewed and signed by the physician or allowed practitioner every 60 days, unless one of the following occurs:\n*   A beneficiary transfers to another HHA.\n*   A discharge and return to home health during the 60-day certification [source: corpus/benefits_policy_manual/bp102c07.pdf, page 40].\n\nAdditionally, payment and coverage conditions require that the plan must be reviewed as often as necessary, but at least whenever it is certified or",
+      "factual_accuracy": 4,
+      "faithfulness": 3,
+      "reasoning": "The system answer accurately states the core requirement of review at least every 60 days, aligning with the reference answer. It also provides additional accurate details, such as the requirement for the physician or allowed practitioner to sign the plan, consultation with HHA personnel, and specific exceptions under the HH PPS, which are supported by the provided citations. This makes the answer more comprehensive than the reference.\n\nHowever, the last sentence of the system answer is incomplete: 'Additionally, payment and coverage conditions require that the plan must be reviewed as often as necessary, but at least whenever it is certified or'. This truncation impacts both factual accuracy (as it's an incomplete statement) and faithfulness (as it's not a fully supported statement from the source). While the preceding information is well-supported, the abrupt ending of the answer is a significant flaw. The 'as often as necessary' part is generally supported by the spirit of the documents (e.g., 'as often as the severity of the patient's condition requires'), but the incomplete sentence itself is not fully faithful to a source."
+    },
+    {
+      "question": "What are the requirements for inpatient rehabilitation facility (IRF) medical necessity?",
+      "generated_answer": "For Inpatient Rehabilitation Facility (IRF) care to be considered reasonable and necessary, the patient's medical record documentation must demonstrate a reasonable expectation that the",
+      "factual_accuracy": 0,
+      "faithfulness": 0,
+      "reasoning": "The system answer is incomplete, ending mid-sentence. Therefore, it does not provide any information to compare for factual accuracy or faithfulness. It fails to answer the question."
+    },
+    {
+      "question": "Under what conditions does Medicare cover dental services for inpatients?",
+      "generated_answer": "Medicare covers dental services for inpatients under the following conditions:\n\n*   When a patient is hospitalized for a dental procedure and the dentist's service is covered",
+      "factual_accuracy": 1,
+      "faithfulness": 4,
+      "reasoning": "The system answer is factually inaccurate because it is highly incomplete and fails to provide the specific conditions under which Medicare covers dental services for inpatients, as detailed in the reference answer. The reference answer specifies that hospitalization must be due to the 'severity of the dental procedure or the patient's underlying medical condition,' which the system answer completely omits. The system's response is too general and does not adequately answer 'Under what conditions.'\n\nFor faithfulness, the system answer does not appear to hallucinate any details not supported by the citations. While it is significantly incomplete compared to the reference answer (and presumably the citations), the prompt's definition of faithfulness primarily focuses on the absence of hallucination. What the system *does* state ('When a patient is hospitalized for a dental procedure and the dentist's service is covered') is likely supported by the source material, even if it's an oversimplification. Therefore, it scores relatively high for not introducing unsupported information, despite its incompleteness."
+    },
+    {
+      "question": "What is the aggregate cap on hospice reimbursement?",
+      "generated_answer": "The aggregate cap on hospice reimbursement limits the total aggregate payments any individual hospice can receive in a cap year to an allowable amount, based on an",
+      "factual_accuracy": 2,
+      "faithfulness": 5,
+      "reasoning": "The system answer correctly identifies that there is an aggregate cap that limits total payments to individual hospices in a cap year. This aligns with the reference answer and is directly supported by the citations (e.g., Page 51 of bp102c09.pdf). However, the system answer is severely incomplete, cutting off mid-sentence and failing to explain *how* the cap is calculated, which is a crucial part of the reference answer and is also present in the citations. Therefore, factual accuracy is low due to incompleteness. Faithfulness is high because the information provided, though incomplete, is directly supported by the citations and does not contain any hallucinations."
+    }
+  ]
+}

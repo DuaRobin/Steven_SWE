@@ -1,0 +1,80 @@
+2026-06-05 00:16:06,134 - evaluation - INFO - Starting evaluation of 25 questions...
+2026-06-05 00:16:12,758 - evaluation - INFO - 
+Evaluating [1/25]: What is the minimum number of consecutive calendar days a patient must be hospitalized before qualifying for SNF coverage?
+2026-06-05 00:17:08,812 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:17:08,813 - evaluation - INFO - 
+Evaluating [2/25]: How long after hospital discharge must a patient be transferred to a SNF to qualify for Medicare coverage?
+2026-06-05 00:17:24,043 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:17:24,043 - evaluation - INFO - 
+Evaluating [3/25]: What is the definition of a terminally ill individual for Medicare hospice eligibility?
+2026-06-05 00:17:37,354 - evaluation - INFO -   -> Accuracy: 3/5, Faithfulness: 5/5
+2026-06-05 00:17:37,354 - evaluation - INFO - 
+Evaluating [4/25]: What are the Medicare hospice election periods?
+2026-06-05 00:17:48,389 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:17:48,389 - evaluation - INFO - 
+Evaluating [5/25]: Who can certify or recertify terminal illness for hospice benefits?
+2026-06-05 00:18:01,237 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:18:01,239 - evaluation - INFO - 
+Evaluating [6/25]: What conditions must a patient meet to qualify for Medicare home health services?
+2026-06-05 00:18:15,701 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:18:15,702 - evaluation - INFO - 
+Evaluating [7/25]: What six disciplines are included in the Home Health PPS 30-day period payment rate?
+2026-06-05 00:18:23,880 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:18:23,880 - evaluation - INFO - 
+Evaluating [8/25]: What requirements must a psychiatric hospital meet to be excluded from IPPS and paid under IPF PPS?
+2026-06-05 00:18:35,715 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:18:35,715 - evaluation - INFO - 
+Evaluating [9/25]: What services are excluded from the definition of inpatient hospital services under Part A?
+2026-06-05 00:18:48,757 - evaluation - INFO -   -> Accuracy: 2/5, Faithfulness: 5/5
+2026-06-05 00:18:48,757 - evaluation - INFO - 
+Evaluating [10/25]: When can Part B payment be made for hospital inpatient services after a Part A denial?
+2026-06-05 00:19:00,965 - evaluation - INFO -   -> Accuracy: 0/5, Faithfulness: 0/5
+2026-06-05 00:19:00,966 - evaluation - INFO - 
+Evaluating [11/25]: Does Medicare cover immunizations and vaccinations?
+2026-06-05 00:19:18,192 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:19:18,193 - evaluation - INFO - 
+Evaluating [12/25]: What items are included in Medicare extended care (SNF) services?
+2026-06-05 00:19:32,092 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:19:32,093 - evaluation - INFO - 
+Evaluating [13/25]: What does a patient waive when electing hospice care?
+2026-06-05 00:19:42,372 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:19:42,373 - evaluation - INFO - 
+Evaluating [14/25]: What happens to Medicare coverage for conditions unrelated to terminal illness during hospice?
+2026-06-05 00:19:59,945 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:19:59,945 - evaluation - INFO - 
+Evaluating [15/25]: What is a day patient under Medicare hospital services?
+2026-06-05 00:20:07,949 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:20:07,950 - evaluation - INFO - 
+Evaluating [16/25]: What is the timely filing limit for Medicare Part B claims after a Part A inpatient denial?
+2026-06-05 00:20:19,420 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:20:19,420 - evaluation - INFO - 
+Evaluating [17/25]: What types of therapy services can a SNF arrange with outside providers under Medicare?
+2026-06-05 00:20:37,794 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 4/5
+2026-06-05 00:20:37,794 - evaluation - INFO - 
+Evaluating [18/25]: What is the difference between skilled and custodial care in the SNF context?
+2026-06-05 00:20:52,053 - evaluation - INFO -   -> Accuracy: 3/5, Faithfulness: 5/5
+2026-06-05 00:20:52,053 - evaluation - INFO - 
+Evaluating [19/25]: What are the four core services that a hospice must provide directly?
+2026-06-05 00:21:13,690 - evaluation - INFO -   -> Accuracy: 1/5, Faithfulness: 1/5
+2026-06-05 00:21:13,690 - evaluation - INFO - 
+Evaluating [20/25]: What is continuous home care under hospice and when is it provided?
+2026-06-05 00:21:32,812 - evaluation - INFO -   -> Accuracy: 1/5, Faithfulness: 1/5
+2026-06-05 00:21:32,812 - evaluation - INFO - 
+Evaluating [21/25]: What is the definition of homebound for Medicare home health services?
+2026-06-05 00:21:44,577 - evaluation - INFO -   -> Accuracy: 5/5, Faithfulness: 5/5
+2026-06-05 00:21:44,578 - evaluation - INFO - 
+Evaluating [22/25]: How often must a home health plan of care be reviewed?
+2026-06-05 00:22:04,094 - evaluation - INFO -   -> Accuracy: 4/5, Faithfulness: 3/5
+2026-06-05 00:22:04,094 - evaluation - INFO - 
+Evaluating [23/25]: What are the requirements for inpatient rehabilitation facility (IRF) medical necessity?
+2026-06-05 00:22:12,659 - evaluation - INFO -   -> Accuracy: 0/5, Faithfulness: 0/5
+2026-06-05 00:22:12,659 - evaluation - INFO - 
+Evaluating [24/25]: Under what conditions does Medicare cover dental services for inpatients?
+2026-06-05 00:22:41,373 - evaluation - INFO -   -> Accuracy: 1/5, Faithfulness: 4/5
+2026-06-05 00:22:41,373 - evaluation - INFO - 
+Evaluating [25/25]: What is the aggregate cap on hospice reimbursement?
+2026-06-05 00:22:55,782 - evaluation - INFO -   -> Accuracy: 2/5, Faithfulness: 5/5
+2026-06-05 00:23:01,197 - evaluation - INFO - 
+Evaluation Complete! Saved to eval_results.json
+2026-06-05 00:23:01,197 - evaluation - INFO - Mean Factual Accuracy: 3.68/5
+2026-06-05 00:23:01,198 - evaluation - INFO - Mean Faithfulness: 4.12/5
