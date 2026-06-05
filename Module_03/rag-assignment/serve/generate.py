@@ -56,7 +56,7 @@ async def generate_answer(user_question: str) -> str:
     # STEP 2: Call Gemini 2.5 Flash with specific configurations
     # -------------------------------------------------------------------------
     response = await genai_client.aio.models.generate_content(
-        model="gemini-2.5-flash",
+        model=app_settings.model_name,  # gemini-2.5-flash from .env,
         contents=prompt,
         config=GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT,

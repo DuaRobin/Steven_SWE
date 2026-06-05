@@ -86,7 +86,7 @@ def evaluate_system():
 
         try:
             judge_response = eval_client.models.generate_content(
-                model="gemini-2.5-flash",
+                model=app_settings.model_name,  # gemini-2.5-flash from .env
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
