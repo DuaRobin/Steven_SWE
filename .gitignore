@@ -1,7 +1,10 @@
 # Python Stuff
 .venv
+.venv5
 __pycache__
 all_pdfs_embeddings.json
 2.chunk_new.py
 lab.log
 labs
+# ADK Stuff
+.adk
