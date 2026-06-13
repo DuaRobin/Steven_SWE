@@ -11,8 +11,8 @@
 
 | Part | Step | Description | gcloud cli command (bash) or console | Results (ScreenPrint) | Notes |
 | :--- | :--- | :---------- | :----------------------------------- | :-------------------- | :---- |
-| Phase-0 | 1 | Single Agent Setup<br><br>[Python Code] | 1: Navigate the Parent Folder Where All the Agents Need To Be Created<br>`cd Module_05/policy_concierge_project`<br><br>2: Setup Policy Concierge Agent (Phase 0)<br>`adk create policy_concierge_phase_0` | [Please Refer Here For Code](./policy_concierge_project/policy_concierge_phase_0/) | Please follow adk documentation |
-| Phase-0 | 2 | Initial Setup Chat History Covering All Tools  | Start Dev UI For Testing Via Terminal: <br><br>1: Navigate the Parent Folder Where All the Agents Folders Are Present<br>`cd Module_05/policy_concierge_project`<br><br>2: Start ADK Dev UI<br>`adk web` | ![Initial Setup Chat History](./images/Phase_0/Initial_Setup_Chat_History.png) | Local Testing |
+| Phase-0 | 1 | Single Agent Setup<br><br>[Python Code] | 1: Navigate to the Parent Folder Where All the Agents Need To Be Created<br>`cd Module_05/policy_concierge_project`<br><br>2: Setup Policy Concierge Agent (Phase 0)<br>`adk create policy_concierge_phase_0` | [Please Refer Here For Code](./policy_concierge_project/policy_concierge_phase_0/) | Please follow adk documentation |
+| Phase-0 | 2 | Initial Setup Chat History Covering All Tools  | Start Dev UI For Testing Via Terminal: <br><br>1: Navigate to the Parent Folder Where All the Agents Folders Are Present<br>`cd Module_05/policy_concierge_project`<br><br>2: Start ADK Dev UI<br>`adk web` | ![Initial Setup Chat History](./images/Phase_0/Initial_Setup_Chat_History.png) | Local Testing |
 ---
 
 </div>
@@ -23,8 +23,8 @@
 
 | Part | Step | Description | gcloud cli command (bash) or console | Results (ScreenPrint) | Notes |
 | :--- | :--- | :---------- | :----------------------------------- | :-------------------- | :---- |
-| Phase-1 | 1 | Multiple Agent Setup<br><br>[Python Code] | 1: Navigate the Parent Folder Where All the Agents Need To Be Created<br>`cd Module_05/policy_concierge_project`<br><br>2: Setup Policy Concierge Sequential Agent (Phase 1)<br>`adk create policy_concierge_phase_1` | [Please Refer Here For Code](./policy_concierge_project/policy_concierge_phase_1/) | Please follow adk documentation |
-| Phase-2 | 2 | Chat History Covering All Sub Agents  | Start Dev UI For Testing Via Terminal: <br><br>1: Navigate the Parent Folder Where All the Agents Folders Are Present<br>`cd Module_05/policy_concierge_project`<br><br>2: Start ADK Dev UI<br>`adk web` | ![Chat History Showing Invocation of Sub Agents](./images/Phase_1/Phase_1_Chat_History.png)![Chat History Showing Agent Name](./images/Phase_1/Phase_1_Agent.png) | Local Testing |
+| Phase-1 | 1 | Multiple Agent Setup<br><br>[Python Code] | 1: Navigate to the Parent Folder Where All the Agents Need To Be Created<br>`cd Module_05/policy_concierge_project`<br><br>2: Setup Policy Concierge Sequential Agent (Phase 1)<br>`adk create policy_concierge_phase_1` | [Please Refer Here For Code](./policy_concierge_project/policy_concierge_phase_1/) | Please follow adk documentation |
+| Phase-2 | 2 | Chat History Covering All Sub Agents  | Start Dev UI For Testing Via Terminal: <br><br>1: Navigate to the Parent Folder Where All the Agents Folders Are Present<br>`cd Module_05/policy_concierge_project`<br><br>2: Start ADK Dev UI<br>`adk web` | ![Chat History Showing Invocation of Sub Agents](./images/Phase_1/Phase_1_Chat_History.png)![Chat History Showing Agent Name](./images/Phase_1/Phase_1_Agent.png) | Local Testing |
 ---
 
 </div>
