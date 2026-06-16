@@ -3,8 +3,8 @@ from sklearn.datasets import fetch_openml
 from sklearn.model_selection import train_test_split
 from pathlib import Path
 
-
-MODULE_DIR = Path(__file__).resolve().parent
+MODULE_DIR: Path = Path(__file__).resolve().parents[1]
+OUTPUT_DIR: Path = Path(MODULE_DIR, "pre_task", "starter_outputs")
 YOURID = "rdua1"
 BUCKET = f"gs://{YOURID}-stevens-swe-20049317"  # I already had a bucket, didn't create new one.
 
@@ -37,22 +37,25 @@ def train(spw):  # spw recalibrates the threshold
     return xgb.train(p, xgb.DMatrix(Xtr.values, label=ytr.values), num_boost_round=60)
 
 
-train(1.0).save_model(f"{MODULE_DIR}/starter_outputs/model.bst")  # v1.0 baseline
-train(1.3).save_model(f"{MODULE_DIR}/starter_outputs/model_v1_1.bst")  # v1.1 recalibrated
+train(1.0).save_model(f"{OUTPUT_DIR}/model.bst")  # v1.0 baseline
+train(1.3).save_model(f"{OUTPUT_DIR}/model_v1_1.bst")  # v1.1 recalibrated
 
-Xtr.to_csv(f"{MODULE_DIR}/starter_outputs/training_data.csv", index=False)
-Xte.assign(fast_track=yte).to_csv(f"{MODULE_DIR}/starter_outputs/holdout.csv", index=False)
-json.dump(Xte.head(20).values.tolist(), open(f"{MODULE_DIR}/starter_outputs/test_payload.json", "w"))
+Xtr.to_csv(f"{OUTPUT_DIR}/training_data.csv", index=False)
+Xte.assign(fast_track=yte).to_csv(f"{OUTPUT_DIR}/holdout.csv", index=False)
+json.dump(
+    Xte.head(20).values.tolist(),
+    open(f"{OUTPUT_DIR}/test_payload.json", "w"),
+)
 
 subprocess.run(
     ["gcloud", "storage", "buckets", "create", BUCKET, "--location=us-east1"]
 )
 for src, dst in [
-    (f"{MODULE_DIR}/starter_outputs/model.bst", "model/model.bst"),
-    (f"{MODULE_DIR}/starter_outputs/model_v1_1.bst", "model_v1_1/model.bst"),
-    (f"{MODULE_DIR}/starter_outputs/training_data.csv", "training_data.csv"),
-    (f"{MODULE_DIR}/starter_outputs/holdout.csv", "holdout.csv"),
-    (f"{MODULE_DIR}/starter_outputs/test_payload.json", "test_payload.json"),
+    (f"{OUTPUT_DIR}/model.bst", "model/model.bst"),
+    (f"{OUTPUT_DIR}/model_v1_1.bst", "model_v1_1/model.bst"),
+    (f"{OUTPUT_DIR}/training_data.csv", "training_data.csv"),
+    (f"{OUTPUT_DIR}/holdout.csv", "holdout.csv"),
+    (f"{OUTPUT_DIR}/test_payload.json", "test_payload.json"),
 ]:
     subprocess.run(["gcloud", "storage", "cp", src, f"{BUCKET}/{dst}"], check=True)
 print("Starter ready and uploaded to", BUCKET)
