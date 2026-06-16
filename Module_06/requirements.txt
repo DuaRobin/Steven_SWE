@@ -1,0 +1,4 @@
+google-cloud-aiplatform==1.157.0
+xgboost==1.7.6
+scikit-learn==1.5.2
+pandas==3.0.3
