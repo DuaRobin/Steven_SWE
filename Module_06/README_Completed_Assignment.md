@@ -49,7 +49,7 @@
 | Part | Step | Description | gcloud cli command (bash) or console | Results (ScreenPrint) | Notes |
 | :--- | :--- | :---------- | :----------------------------------- | :-------------------- | :---- |
 | Task-3 | 1 | Register Model V1.1 | [Please Refer Here For Code (GitHub)](./task_03/register_v1_1.py) | ![Model Registery V1.1](./evidence/task_03/Model_1.1_Registry.png)![Model Registery V1.1](./evidence/task_03/Model_1.1_Registry_Console.png) | Terminal & Console View  |
-| Task-3 | 2 | Deploy Model V1.1 & Test 90, 10 Traffic Split | [Please Refer Here For Code (GitHub)](./task_03/deploy_v1_1.py) | ![Canary Testing 90/10 Split](./evidence/task_03/Logs_Canary_Rollout_90_10_Split.png) You can also refer the logs [here](./evidence/task_03/downloaded-logs-20260617-093826.csv) | Logs Console View |
+| Task-3 | 2 | Deploy Model V1.1 & Test 90, 10 Traffic Split | [Please Refer Here For Code (GitHub)](./task_03/deploy_v1_1.py) | ![Canary Testing 90/10 Split](./evidence/task_03/Logs_Canary_Rollout_90_10_Split.png)<br><br>You can also refer the logs [here](./evidence/task_03/downloaded-logs-20260617-093826.csv) | Logs Console View |
 | Task-3 | 3 | Roll Up & Move Production Aliases | 1: [Please Refer Here For Code (GitHub)](./task_03/canary_rollout.py) | ![Roll Out + Aliases](./evidence/task_03/Ramp_Up_V1_1_Full_Traffic.png) ![Roll Out + Aliases](./evidence/task_03/V1_1_Labels_And_Production_Aliases.png) | Console View |
 | Task-3 | 4 | Roll Back | 1: [Please Refer Here For Code (GitHub)](./task_03/canary_rollout.py) | ![Roll BAck](./evidence/task_03/Rollback_To_V1_0_Full_Traffic.png) | Console View |
 ---
