@@ -77,7 +77,18 @@
 
 | Part | Step | Description | gcloud cli command (bash) or console | Results (ScreenPrint) | Notes |
 | :--- | :--- | :---------- | :----------------------------------- | :-------------------- | :---- |
-| Task-5 | 1 | Reflection | | [Please Refer Here](./reflection.md) | |
+| Task-5 | 1 | Teardown | Note: I'm using my personal gcloud account that you don't have access to, so I'm tearing down my resources. Please validate via Task-4 evidence and logs | | |
+---
+
+</div>
+<br/>
+<br/>
+<br/>
+<div id="task-6" align="center" style="color: #000000; background-color: #479d54;">
+
+| Part | Step | Description | gcloud cli command (bash) or console | Results (ScreenPrint) | Notes |
+| :--- | :--- | :---------- | :----------------------------------- | :-------------------- | :---- |
+| Task-6 | 1 | Reflection | | [Please Refer Here](./reflection.md) | |
 ---
 
 </div>
