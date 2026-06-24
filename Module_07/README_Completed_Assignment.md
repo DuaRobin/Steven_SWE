@@ -25,7 +25,7 @@
 | Part | Step | Description | gcloud cli command (bash) or console | Results (ScreenPrint) | Notes |
 | :--- | :--- | :---------- | :----------------------------------- | :-------------------- | :---- |
 | Task-2 | 1 | Screening Gateway Threat Model | | [Screening Gateway Threat Model](./task_02/screening-gateway-threat-model.md) | |
-| Task-2 | 2, 3 | request-path harness (gateway.py) & testing | [Please Refer the Code (GitHub) Here](./task_02/gateway.py) | ![Gateway Testing](./evidence/Task_2_Gateway_Testing.png) | Local Testing |
+| Task-2 | 2, 3 | request-path harness (gateway.py) & testing | [Please Refer gateway.py (GitHub) Here](./task_02/gateway.py) | ![Gateway Testing](./evidence/Task_2_Gateway_Testing.png) | Local Testing |
 ---
 
 </div>
